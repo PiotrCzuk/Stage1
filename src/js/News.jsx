@@ -1,12 +1,19 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 
 export default class News extends Component {
     render() {
         return (
-            <div>
-                News page
-            </div>
+            <section className="news-news">
+                <Grid>
+                    <Row>
+                        <Col>
+
+                        </Col>
+                    </Row>
+                </Grid>
+            </section>
         )
     }
 }

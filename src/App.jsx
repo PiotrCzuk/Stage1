@@ -5,6 +5,10 @@ import Home from './js/Home';
 import About from './js/About';
 import News from './js/News';
 import NavBar from './js/NavBar';
+import Form from './js/Form';
+import Events from './js/Events';
+import Equipment from './js/Equipment'
+import Footer from './js/Footer'
 
 class App extends Component {
   render() {
@@ -13,8 +17,12 @@ class App extends Component {
         <div>
             <NavBar/>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/about" component={About}/>
-            <Route exact path="/news" component={News}/>
+            <Route path="/about" component={About}/>
+            <Route path="/news" component={News}/>
+            <Route path="/equipment" component={Equipment}/>
+            <Route path="/events" component={Events}/>
+            <Route path="/form" component={Form}/>
+            <Footer/>
         </div>
       </Router>
     )
