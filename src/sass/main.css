@@ -1,1 +1,3 @@
 @import url("./partials/NavBar.scss");
+.jumbotron {
+  background-color: #080808; }

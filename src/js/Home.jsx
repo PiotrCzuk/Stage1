@@ -1,19 +1,45 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom';
 import {Jumbotron, Grid, Button, Row, Col, Image} from 'react-bootstrap';
-import logo from '../images/download.png'
-import '../sass/main.css'
+import logo from '../images/download.png';
+import '../sass/main.css';
+import Particles from 'react-particles-js';
+import note from '../images/note-24.jpg'
+
+
+
+const particlesParams = {
+    particles: {
+        number: {
+            value:50
+        },
+        color: {
+            value: '#fff'
+        },
+        shape: {
+            type: 'image',
+            image: {
+                src: note,
+                width: 100,
+                height: 100,
+            }
+        }
+    }
+};
+
+
 
 export default class Home extends Component {
     render() {
         return (
             <Grid>
                 <Jumbotron>
-                    <h2>Stage1</h2>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <Link to="/about">
-                    <Button bsStyle="primary">O Nas</Button>
-                </Link>
+                   <Particles params={particlesParams}/>
+                       <h2>Stage1</h2>
+                       <p>Lorem ipsum dolor sit amet.</p>
+                       <Link to="/about">
+                           <Button bsStyle="primary">O Nas</Button>
+                       </Link>
                 </Jumbotron>
                 <Row className="home-news">
                     <Col xs={12} md={8}>

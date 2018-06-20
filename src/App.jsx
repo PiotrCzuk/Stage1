@@ -10,6 +10,7 @@ import Events from './js/Events';
 import Equipment from './js/Equipment'
 import Footer from './js/Footer'
 
+
 class App extends Component {
   render() {
     return (
