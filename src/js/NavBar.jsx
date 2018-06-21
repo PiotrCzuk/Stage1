@@ -5,7 +5,7 @@ import {Navbar, Nav, NavItem} from 'react-bootstrap';
 
 export default class NavBar extends Component {
     render() {
-        return <Navbar inverse collapseOnSelect className="customNavbar">
+        return <Navbar inverse collapseOnSelect>
             <Navbar.Header>
                 <Navbar.Brand>
                     <a href="/">stage1</a>
