@@ -4,7 +4,8 @@ import {Jumbotron, Grid, Button, Row, Col, Image} from 'react-bootstrap';
 import logo from '../images/download.png';
 import '../sass/main.css';
 import Particles from 'react-particles-js';
-import note from '../images/note-24.jpg'
+import note from '../images/note-24.jpg';
+import Config from '../particles';
 
 
 
@@ -20,8 +21,6 @@ const particlesParams = {
             type: 'image',
             image: {
                 src: note,
-                width: 100,
-                height: 100,
             }
         }
     }
@@ -31,7 +30,9 @@ const particlesParams = {
 
 export default class Home extends Component {
     render() {
+        console.log(Config);
         return (
+            <div>
             <Grid>
                 <Jumbotron>
                    <Particles params={particlesParams}/>
@@ -41,9 +42,12 @@ export default class Home extends Component {
                            <Button bsStyle="primary">O Nas</Button>
                        </Link>
                 </Jumbotron>
+            </Grid>
+            <main>
+            <Grid>
                 <Row className="home-news">
-                    <Col xs={12} md={8}>
-                        <Image src={logo} responsive className="home-news-image"/>
+                    <Col xs={12} md={8} className="home-news-image">
+                        <Image src={logo} responsive />
                     </Col>
                     <Col xs={6} md={4}>
                         <h2>Wiadomosci</h2>
@@ -55,8 +59,8 @@ export default class Home extends Component {
                         </Link>
                     </Col>
                 </Row>
-                <Row className="home-equipment">
-                    <Col xs={12} md={8}>
+                <Row>
+                    <Col xs={6} md={4} className="home-equipment">
                         <h2>Nasz Sprzet</h2>
                         <p>Zobacz Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Adipisci aut consequuntur dolores ipsa nesciunt quasi vel vitae.
@@ -65,13 +69,13 @@ export default class Home extends Component {
                             <Button bsStyle="primary">Sprzet</Button>
                         </Link>
                     </Col>
-                    <Col xs={6} md={4}>
-                        <Image src={logo} responsive className="home-news-image"/>
+                    <Col xs={12} md={8} className="home-news-image">
+                        <Image src={logo} responsive />
                     </Col>
                 </Row>
                 <Row className="home-events">
-                    <Col xs={12} md={8}>
-                        <Image src={logo} responsive className="home-news-image"/>
+                    <Col xs={12} md={8} className="home-news-image">
+                        <Image src={logo} responsive/>
                     </Col>
                     <Col xs={6} md={4}>
                         <h2>Nasze Realizacje</h2>
@@ -84,9 +88,6 @@ export default class Home extends Component {
                     </Col>
                 </Row>
                 <Row className="home-form">
-                    <Col xs={12} md={8}>
-                        <Image src={logo} responsive className="home-news-image"/>
-                    </Col>
                     <Col xs={6} md={4}>
                         <h2>Kontakt</h2>
                         <p>Zobacz Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -96,8 +97,13 @@ export default class Home extends Component {
                             <Button bsStyle="primary">Form</Button>
                         </Link>
                     </Col>
+                    <Col xs={12} md={8} className="home-news-image">
+                        <Image src={logo} responsive />
+                    </Col>
                 </Row>
             </Grid>
+        </main>
+            </div>
         )
     }
 }

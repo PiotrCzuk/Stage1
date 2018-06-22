@@ -9,7 +9,7 @@ export default class News extends Component {
                 <Grid>
                     <Row>
                         <Col>
-
+                            <h2>Wiadmosci</h2>
                         </Col>
                     </Row>
                 </Grid>

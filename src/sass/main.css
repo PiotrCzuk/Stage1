@@ -1,3 +1,20 @@
 @import url("./partials/NavBar.scss");
+@import url("./partials/Footer.scss");
 .jumbotron {
-  background-color: #080808; }
+  background: #ffa84c;
+  background: -moz-linear-gradient(-45deg, #ffa84c 0%, #ff7b0d 100%);
+  background: -webkit-linear-gradient(-45deg, #ffa84c 0%, #ff7b0d 100%);
+  background: linear-gradient(135deg, #ffa84c 0%, #ff7b0d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 ); }
+
+.row {
+  padding-top: 50px; }
+
+.home-equipment {
+  display: flex;
+  flex-direction: column; }
+
+.home-news-image {
+  display: flex;
+  justify-content: center;
+  align-items: center; }

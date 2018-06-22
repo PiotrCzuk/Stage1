@@ -8,16 +8,16 @@ export default class Footer extends Component {
             <footer>
                 <Grid>
                     <Row>
-                        <Col xs={2} md={2}>
+                        <Col xs={12} md={3}>
                             Copyright
                         </Col>
-                        <Col xs={2} md={2}>
+                        <Col xs={12} md={3}>
                             Logo
                         </Col>
-                        <Col xs={2} md={2}>
+                        <Col xs={12} md={3}>
                             Twitter
                         </Col>
-                        <Col xs={2} md={2}>
+                        <Col xs={12} md={3}>
                             Facebook
                         </Col>
                     </Row>

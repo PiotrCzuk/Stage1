@@ -5,6 +5,9 @@
   border: 1px solid transparent;
 }
 
+.navbar-brand {
+  font-size: 25px;
+}
 
 .navbar-inverse .navbar-brand {
   color: #f9970e;
@@ -12,6 +15,7 @@
 
 .navbar-inverse .navbar-nav>li>a {
   color: #f9970e;
+  font-size: 25px;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {

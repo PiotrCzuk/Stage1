@@ -1,7 +1,27 @@
 @import url('./partials/NavBar.scss');
+@import url('./partials/Footer.scss');
 
 
 //Home
 .jumbotron {
-  background-color: #080808;
+  background: rgb(255,168,76);
+  background: -moz-linear-gradient(-45deg, rgba(255,168,76,1) 0%, rgba(255,123,13,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%);
+  background: linear-gradient(135deg, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 );
+}
+
+.row {
+  padding-top: 50px;
+}
+
+.home-equipment {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-news-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
