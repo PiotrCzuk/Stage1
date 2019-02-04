@@ -3,40 +3,18 @@ import {Link} from 'react-router-dom';
 import {Jumbotron, Grid, Button, Row, Col, Image} from 'react-bootstrap';
 import logo from '../images/download.png';
 import '../sass/main.css';
-import Particles from 'react-particles-js';
-import note from '../images/note-24.jpg';
-import Config from '../particles';
 
-
-
-const particlesParams = {
-    particles: {
-        number: {
-            value:50
-        },
-        color: {
-            value: '#fff'
-        },
-        shape: {
-            type: 'image',
-            image: {
-                src: note,
-            }
-        }
-    }
-};
 
 
 
 export default class Home extends Component {
+
     render() {
-        console.log(Config);
         return (
             <div>
             <Grid>
                 <Jumbotron>
-                   <Particles params={particlesParams}/>
-                       <h2>Stage1</h2>
+                       <h2>{}</h2>
                        <p>Lorem ipsum dolor sit amet.</p>
                        <Link to="/about">
                            <Button bsStyle="primary">O Nas</Button>
@@ -47,13 +25,11 @@ export default class Home extends Component {
             <Grid>
                 <Row className="home-news">
                     <Col xs={12} md={8} className="home-news-image">
-                        <Image src={logo} responsive />
+                        <Image responsive />
                     </Col>
                     <Col xs={6} md={4}>
-                        <h2>Wiadomosci</h2>
-                        <p>Zobacz Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Adipisci aut consequuntur dolores ipsa nesciunt quasi vel vitae.
-                            Quae, reiciendis, veritatis!</p>
+                        <h2>{}</h2>
+                        <p>{}</p>
                         <Link to="/news">
                             <Button bsStyle="primary">Wiadomosci</Button>
                         </Link>

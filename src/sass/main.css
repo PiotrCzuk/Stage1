@@ -1,5 +1,8 @@
 @import url("./partials/NavBar.scss");
 @import url("./partials/Footer.scss");
+@import url("./partials/Events.scss");
+@import url("./partials/News.scss");
+@import url("./partials/SingleEventImage.scss");
 .jumbotron {
   background: #ffa84c;
   background: -moz-linear-gradient(-45deg, #ffa84c 0%, #ff7b0d 100%);

@@ -7,11 +7,11 @@ import News from './js/News';
 import NavBar from './js/NavBar';
 import ContactForm from './js/ContactForm';
 import Events from './js/Events';
-import Equipment from './js/Equipment'
-import Footer from './js/Footer'
-
+import Equipment from './js/Equipment';
+import Footer from './js/Footer';
 
 class App extends Component {
+
   render() {
     return (
       <Router>
